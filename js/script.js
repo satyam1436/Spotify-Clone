@@ -73,7 +73,8 @@ let playMusic = (track, pause = false) => {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`https://github.com/satyam1436/Spotify-Clone/tree/main/songs/`)
+    console.log("displayAlbums fetch", a);
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response
